@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página de Afiliación</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay muted loop id="bg-video">
+    <source src="Particles_7___48s___4k_res.mp4" type="video/mp4" />
+    Tu navegador no soporta videos en HTML5.
+  </video>
+
+  <!-- Contenido encima del video -->
+  <div class="overlay">
+    <div class="container">
+      <img src="lv-0-20250508165917-unscreen.gif" alt="Logo" class="logo" />
+      <div class="form-box">
+        <input type="password" id="password" placeholder="Contraseña de afiliación" />
+        <button onclick="checkPassword()">Ingresar</button>
+        <p id="message"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

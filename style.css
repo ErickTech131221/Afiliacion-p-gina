@@ -1,0 +1,92 @@
+/* Fondo de video */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Capa encima del video */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor general */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  width: 100%;
+  text-align: center;
+}
+
+/* Logo grande pero adaptable */
+.logo {
+  width: 400px;
+  max-width: 90vw;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+/* Caja de formulario */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Input */
+input {
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+/* Botón */
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Mensaje de error */
+p {
+  margin-top: 10px;
+  color: red;
+}
+
+/* Estilo para los textos de bienvenida */
+h1, h2 {
+  color: white;
+}
+
+.small-logo {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
