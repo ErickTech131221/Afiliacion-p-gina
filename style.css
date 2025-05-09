@@ -34,7 +34,7 @@ body {
 /* Logo grande pero adaptable */
 .logo {
   width: 300px;
-  max-width: 90vw;
+  max-width: 100%;
   height: auto;
   margin-bottom: 40px;
 }
