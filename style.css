@@ -1,13 +1,11 @@
 /* Fondo de video */
-#bg-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  object-fit: cover;
+body {
+  background-image: url('fondo.png'); /* Cambia 'tu-imagen.jpg' por el nombre correcto */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 /* Capa encima del video */
 .overlay {
@@ -35,7 +33,7 @@
 
 /* Logo grande pero adaptable */
 .logo {
-  width: 400px;
+  width: 300px;
   max-width: 90vw;
   height: auto;
   margin-bottom: 40px;
