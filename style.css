@@ -1,93 +1,131 @@
 /* Fondo de video */
 body {
-  height: 100vh; /* Asegura que el body ocupe toda la pantalla */
-  margin: 0;      /* Quita espacios por defecto */
-  background-image: url('fondo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    background-image: url('fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-
 
 /* Capa encima del video */
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Contenedor general */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 90%;
-  width: 100%;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para el contenedor del logo y el texto */
+.logo-texto {
+    display: flex; /* Alinea los elementos en línea */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-bottom: 20px; /* Espacio entre el logo/texto y el formulario */
+    width: 100%; /* Ocupa todo el ancho disponible dentro del container */
+    justify-content: center; /* Centra el logo y el texto inicialmente */
+    text-align: left; /* Alinea el contenido interno a la izquierda */
+}
+
+/* Estilo para el contenedor vertical del texto */
+.texto-vertical {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    margin-left: 20px; /* Espacio entre el logo y el texto */
+}
+
+.texto-bienvenida {
+    color: white; /* Color blanco */
+    font-weight: bold; /* Mismo grosor que el dorado */
+    font-family: sans-serif; /* Misma fuente (si la definiste para el dorado) */
+    font-size: 24px; /* Mismo tamaño de fuente que el dorado */
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 30px; /* Espacio inferior */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilo para el texto dorado */
+.texto-dorado {
+    color: gold;
+    text-shadow:
+        0 0 5px #FFD700,
+        0 0 10px #FFA500;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 24px;
+    margin-bottom: 5px; /* Espacio entre cada palabra */
+    margin-top: 0; /* Elimina el margen superior predeterminado de h1 */
 }
 
 /* Logo grande pero adaptable */
 .logo {
-  width: 300px;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 40px;
+    width: 150px; /* Ajusta el ancho del logo según necesites */
+    max-width: 50%;
+    height: auto;
 }
 
 /* Caja de formulario */
 .form-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
 }
 
 /* Input */
 input {
-  padding: 12px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  width: 100%;
-  border-radius: 5px;
-  border: none;
-  text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
 }
 
 /* Botón */
 button {
-  padding: 12px;
-  font-size: 16px;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  cursor: pointer;
+    padding: 12px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
 }
 
 /* Mensaje de error */
 p {
-  margin-top: 10px;
-  color: red;
+    margin-top: 10px;
+    color: red;
 }
 
 /* Estilo para los textos de bienvenida */
 h1, h2 {
-  color: white;
+    color: white;
 }
 
 .small-logo {
-  width: 300px;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 40px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
 }

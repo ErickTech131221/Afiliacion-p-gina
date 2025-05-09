@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Página de Afiliación</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Página de Afiliación</title>
+    <link rel="stylesheet" href="style.css" />
+    <style> /* Estilos adicionales para este texto */
+        .texto-bienvenida {
+            color: white; /* Color blanco */
+            font-weight: bold; /* Mismo grosor que el dorado */
+            font-family: sans-serif; /* Misma fuente (si la definiste para el dorado) */
+            font-size: 24px; /* Mismo tamaño de fuente que el dorado */
+            text-align: center; /* Centrar el texto */
+            margin-top: 10px; /* Reducimos el espacio superior entre los bloques de texto */
+            margin-bottom: 10px; /* Reducimos el espacio inferior entre los bloques de texto */
+            line-height: 1.2; /* Ajustamos el espaciado entre líneas dentro de cada párrafo */
+        }
+    </style>
 </head>
 <body>
-
-
-  <div class="overlay">
-    <div class="container">
-      <img src="lv-0-20250508165917-unscreen.gif" alt="Logo" class="logo" />
-      <div class="form-box">
-        <input type="password" id="password" placeholder="Contraseña de afiliación" />
-        <button onclick="checkPassword()">Ingresar</button>
-        <p id="message"></p>
-      </div>
+    <div class="overlay">
+        <div class="container">
+            <div class="logo-texto">
+                <img src="lv-0-20250508165917-unscreen.gif" alt="Logo" class="logo" />
+                <div class="texto-vertical">
+                    <h1 class="texto-dorado">HONOR</h1>
+                    <h1 class="texto-dorado">LEALTAD</h1>
+                    <h1 class="texto-dorado">Y</h1>
+                    <h1 class="texto-dorado">FIRMEZA</h1>
+                </div>
+            </div>
+            <p class="texto-bienvenida">Somos una gente trabajadora apoyándonos mutuamente</p>
+            <p class="texto-bienvenida">haciendo valer nuestros derechos</p>
+            <div class="form-box">
+                <input type="password" id="password" placeholder="Contraseña de afiliación" />
+                <button onclick="checkPassword()">Ingresar</button>
+                <p id="message"></p>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
