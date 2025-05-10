@@ -95,7 +95,7 @@ p {
 }
 
 /* Estilo para los textos de bienvenida */
-h1, h2 {
+h1, h2 , h3{
             font-weight: bold;
         font-family: sans-serif;
         font-size: 40px;
