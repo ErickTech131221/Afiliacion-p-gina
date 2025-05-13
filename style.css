@@ -95,7 +95,7 @@ p {
 }
 
 /* Estilo para los textos de bienvenida */
-h1, h2 , h3{
+h1, h2 {
             font-weight: bold;
         font-family: sans-serif;
         font-size: 40px;
@@ -104,7 +104,15 @@ h1, h2 , h3{
         background-clip: text;
         color: transparent !important;
 }
-
+h3 {
+            font-weight: bold;
+        font-family: sans-serif;
+        font-size: 40px;
+         background: linear-gradient(to bottom, gold, gold);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent !important;
+}
 .small-logo {
     width: 700px;
     max-width: 100%;
